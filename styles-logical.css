@@ -83,10 +83,10 @@ color: var(--white30);
 nav details summary {
     font-weight: bold;
 }
-
+/* 
 h1 , h2, h3 {
-    /* font-weight: normal; */
-}
+    font-weight: normal;
+} */
 
 h1 {    
     font-size: 60px;
@@ -189,10 +189,10 @@ blockquote P {
 .main hr {
     display: none;
 }
-
+/* 
 .main {
-    /* border: 1px solid blue; */
-}
+    border: 1px solid blue;
+} */
 
 .wrapper {
 max-inline-size: 902px;
@@ -203,3 +203,38 @@ margin: auto;
 padding-inline: 16px;
 }
 
+/* 
+.slider {
+    border: 1px solid red;
+} */
+
+.slider-container {
+/* block-size: 100px; */
+display: block;
+overflow: auto;
+scroll-behavior: smooth;
+white-space: nowrap;
+font-size: 0;
+}
+
+.video {
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.slider-bullet-list {
+    text-align: center;
+    margin-block-start: 10px;
+}
+
+
+.slider-bullet {
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    background: white;
+    border-radius: 50%;
+}
