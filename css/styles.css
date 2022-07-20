@@ -1,0 +1,108 @@
+@font-face {
+    font-family: charter;
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: charter;
+    src: url("../fonts/Roboto/Roboto-Italic.ttf"); 
+    font-style: italic;
+    font-weight: 400;
+}
+@font-face {
+    font-family: charter;
+    src: url("../fonts/Roboto/Roboto-Bold.ttf");
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: charter;
+    src: url("../fonts/Roboto/Roboto-BoldItalic.ttf"); 
+    font-style: italic;
+    font-weight: bold;
+}
+
+:root {
+    font-size: 18px;
+    --gray30: #212121;
+    --gray20: #616161; 
+    --gray10: #212429; 
+}
+
+body {
+    color: var(--gray30);
+    font-family: 'Roboto', sans-serif;
+    /* font-size: charter; */
+}
+a {
+    color: var(--gray30);
+}
+
+header {
+    /* --gray10: red; */
+    font-size: 14px;
+    color: var(--gray10);
+}
+
+header a {
+    color: var(--gray20);
+    text-decoration: none;
+}
+
+header a:hover {
+color: var(--gray30);
+}
+
+nav details summary {
+    font-weight: bold;
+}
+
+h1 {    
+    font-size: 60px;
+    /* font-size: 3.75em; */
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+pre {
+    background: #FEC62E;
+}
+
+.hero {
+
+    background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url("../images/patron-1.png");
+    /* background-repeat: no-repeat; */
+    height: 350px;
+}
+
+.section-content {
+    counter-reset: titlelist;
+}
+
+.section-content h3 {
+    counter-increment: titlelist; 
+}
+
+.section-content h3::before {
+    content: counter(titlelist, decimal);
+}
+
+.section-content h3::after {
+    content: '';
+    width: 32px;
+    height: 4px;
+    background: var(--gray30);
+    display: inline-block;
+}
+
+
+/* ::selection {
+    background: skyblue;
+} */
